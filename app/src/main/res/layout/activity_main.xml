@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.higherorlower.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <TextView
+        android:id="@+id/lblFeedback"
+        android:layout_width="201dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="53dp"
+        android:layout_marginTop="98dp"
+        android:text="Ready To Go"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toTopOf="@+id/txtNumGuess"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNumGuess"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="57dp"
+        android:ems="10"
+        android:hint="Guess a number"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/btnGuess"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblFeedback" />
+
+    <Button
+        android:id="@+id/btnGuess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="142dp"
+        android:text="Guess"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumGuess" />
+</android.support.constraint.ConstraintLayout>
