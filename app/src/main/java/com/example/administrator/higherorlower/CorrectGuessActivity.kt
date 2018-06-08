@@ -17,7 +17,7 @@ class CorrectGuessActivity : AppCompatActivity() {
 
     fun playAgain() {
         btnPlayAgain.setOnClickListener{
-            val intent = Intent("com.mcandroid.higherorlower.MainActivity")
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
     }

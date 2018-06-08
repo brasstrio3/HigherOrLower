@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
     fun generateRandomNumber(): Int {
         var random = Random()
         var min = 1
-        var max = 10
+        var max = 100
         randomNum = random.nextInt(max + 1 - min) + min
 
         return randomNum
@@ -37,6 +37,7 @@ class MainActivity : AppCompatActivity() {
         var numberToGuess = randomNum
         var userGuess: Int = Integer.parseInt(txtNumGuess.getText().toString())
 
+        txtNumGuess.setText("")
         checkUserGuess(userGuess, numberToGuess)
     }
 
@@ -54,7 +55,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun createListenerForButton() {
-        btnGuess.setOnClickListener() {
+        txtNumGuess.setOnClickListener() {
             if(txtNumGuess.getText().toString().equals("")) {
                 toast("Pleast enter a number")
             }
